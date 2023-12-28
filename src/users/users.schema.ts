@@ -1,8 +1,8 @@
 /* eslint-disable prettier/prettier */
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { Document } from 'mongoose';
+import { HydratedDocument } from 'mongoose';
 
-export type UserDocument = User & Document
+export type UserDocument = HydratedDocument<User>;
 
 export enum UserRole {
     USER = 'user',
