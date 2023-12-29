@@ -4,7 +4,6 @@ import { BlogsModule } from './blogs/blogs.module';
 import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { AuthModule } from './auth/auth.module';
-import { UsersController } from './users/users.controller';
 
 @Module({
   imports: [
